@@ -1,16 +1,69 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Navbar & Audio Section</title>
+    <style>
+        /* Styling for the blockquote */
+        blockquote {
+            max-width: 600px;
+            margin: 10px;
+            padding: 15px;
+            border-left: 8px solid green;
+            background-color: #f8fffe;
+            font-weight: bold;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <!-- Each list item contains an anchor tag linking to different sections -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-</body>
+    <!-- Audio Section -->
+    <section>
+        <!-- Heading for the audio section -->
+        <h2>3 random audios</h2>
+        
+        <!-- First audio track -->
+        <audio controls src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3">
+            <!-- Fallback text if the browser does not support the audio element -->
+            Your browser does not support the audio element.
+        </audio>
+        
+        <!-- Second audio track -->
+        <audio controls src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <!-- Third audio track -->
+        <audio controls src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
 
-</html>
+    <!-- Quiz Section -->
+    <section>
+        <h2>Quiz</h2>
+        <p>What is the capital of India?</p>
+        <form>
+            <label>
+                <input type="radio" name="capital" value="new_delhi"> New Delhi
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="capital" value="mumbai"> Mumbai
+            </label>
+        </form>
+        
+        <!-- Quotation Section -->
+        <blockquote>
+            "New Delhi is the capital of India and an administrative district of NCT Delhi."
+            <br>
